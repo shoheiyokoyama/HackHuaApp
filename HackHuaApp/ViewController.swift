@@ -13,14 +13,15 @@ class ViewController: UIViewController {
 
     var myMotionManager: CMMotionManager!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         
         // Labelを作成.
-        let myXLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
-        myXLabel.backgroundColor = UIColor.blueColor()
+        let myXLabel: UILabel = UILabel(frame: CGRectMake(0,0,300,50))
+        myXLabel.backgroundColor = UIColor.grayColor()
         myXLabel.layer.masksToBounds = true
         myXLabel.layer.cornerRadius = 10.0
         myXLabel.textColor = UIColor.whiteColor()
@@ -66,6 +67,8 @@ class ViewController: UIViewController {
             myYLabel.text = "y=\(accelerometerData.acceleration.y)"
             myZLabel.text = "z=\(accelerometerData.acceleration.z)"
         })
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

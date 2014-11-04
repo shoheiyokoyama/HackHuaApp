@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>53040018-8E9A-42D7-81A1-848F5CCC0A63</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HackHuaApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FE54D08E543A400E95730120C855223557F38D81</key>
+		<string>https://github.com/shoheiyokoyama/HackHuaApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HackHuaApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FE54D08E543A400E95730120C855223557F38D81</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/shoheiyokoyama/HackHuaApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FE54D08E543A400E95730120C855223557F38D81</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FE54D08E543A400E95730120C855223557F38D81</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HackHuaApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
