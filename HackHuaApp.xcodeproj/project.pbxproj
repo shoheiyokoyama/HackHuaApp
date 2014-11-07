@@ -13,6 +13,9 @@
 		6D7FCDE21A070CE700A85E03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7FCDE11A070CE700A85E03 /* Images.xcassets */; };
 		6D7FCDE51A070CE700A85E03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D7FCDE31A070CE700A85E03 /* LaunchScreen.xib */; };
 		6D7FCDF11A070CE700A85E03 /* HackHuaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7FCDF01A070CE700A85E03 /* HackHuaAppTests.swift */; };
+		6DFF5A651A0CC4F20097EF4C /* j1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF5A641A0CC4F20097EF4C /* j1.jpeg */; };
+		6DFF5A671A0CC6240097EF4C /* j2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF5A661A0CC6240097EF4C /* j2.jpeg */; };
+		6DFF5A691A0CCCAE0097EF4C /* uaboy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF5A681A0CCCAE0097EF4C /* uaboy.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		6D7FCDD51A070CE700A85E03 /* HackHuaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackHuaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7FCDD91A070CE700A85E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7FCDDA1A070CE700A85E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D7FCDDC1A070CE700A85E03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D7FCDDC1A070CE700A85E03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; };
 		6D7FCDDF1A070CE700A85E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D7FCDE11A070CE700A85E03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6D7FCDE41A070CE700A85E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6D7FCDEA1A070CE700A85E03 /* HackHuaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackHuaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7FCDEF1A070CE700A85E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7FCDF01A070CE700A85E03 /* HackHuaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackHuaAppTests.swift; sourceTree = "<group>"; };
+		6DFF5A641A0CC4F20097EF4C /* j1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = j1.jpeg; sourceTree = "<group>"; };
+		6DFF5A661A0CC6240097EF4C /* j2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = j2.jpeg; sourceTree = "<group>"; };
+		6DFF5A681A0CCCAE0097EF4C /* uaboy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = uaboy.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				6D7FCDD71A070CE700A85E03 /* HackHuaApp */,
 				6D7FCDED1A070CE700A85E03 /* HackHuaAppTests */,
 				6D7FCDD61A070CE700A85E03 /* Products */,
+				6DFF5A641A0CC4F20097EF4C /* j1.jpeg */,
+				6DFF5A661A0CC6240097EF4C /* j2.jpeg */,
+				6DFF5A681A0CCCAE0097EF4C /* uaboy.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,7 +203,10 @@
 			files = (
 				6D7FCDE01A070CE700A85E03 /* Main.storyboard in Resources */,
 				6D7FCDE51A070CE700A85E03 /* LaunchScreen.xib in Resources */,
+				6DFF5A651A0CC4F20097EF4C /* j1.jpeg in Resources */,
+				6DFF5A691A0CCCAE0097EF4C /* uaboy.wav in Resources */,
 				6D7FCDE21A070CE700A85E03 /* Images.xcassets in Resources */,
+				6DFF5A671A0CC6240097EF4C /* j2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -292,6 +305,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -314,6 +328,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -327,6 +342,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -405,6 +421,7 @@
 				6D7FCDF61A070CE700A85E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D7FCDF71A070CE700A85E03 /* Build configuration list for PBXNativeTarget "HackHuaAppTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				6D7FCDF91A070CE700A85E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
