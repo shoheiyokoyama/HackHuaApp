@@ -9,20 +9,20 @@
 import UIKit
 import CoreMotion
 import AVFoundation
-struct AVAudioPlayerUtil {
-    
-    static var audioPlayer:AVAudioPlayer = AVAudioPlayer();
-    static var sound_data:NSURL = NSURL();
-    
-    static func setValue(nsurl:NSURL){
-        self.sound_data = nsurl;
-        self.audioPlayer = AVAudioPlayer(contentsOfURL: self.sound_data, error: nil);
-        self.audioPlayer.prepareToPlay();
-    }
-    static func play(){
-        self.audioPlayer.play();
-    }
-}
+//struct AVAudioPlayerUtil {
+//
+//    static var audioPlayer:AVAudioPlayer = AVAudioPlayer();
+//    static var sound_data:NSURL = NSURL();
+//    
+//    static func setValue(nsurl:NSURL){
+//        self.sound_data = nsurl;
+//        self.audioPlayer = AVAudioPlayer(contentsOfURL: self.sound_data, error: nil);
+//        self.audioPlayer.prepareToPlay();
+//    }
+//    static func play(){
+//        self.audioPlayer.play();
+//    }
+//}
 
 
 class ViewController: UIViewController {
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
 
         
         // Viewの背景色を青にする.
-        self.view.backgroundColor = UIColor.cyanColor()
+        self.view.backgroundColor = UIColor.blackColor()
         
         // ViewにLabelを追加.
        
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         myMotionManager = CMMotionManager()
         
         // 更新周期を設定.
-        myMotionManager.accelerometerUpdateInterval = 0.1
+        myMotionManager.accelerometerUpdateInterval = 0.01
        
         
         // 加速度の取得を開始.
@@ -100,12 +100,12 @@ class ViewController: UIViewController {
             let b = "hidari"
             let img:UIImage! = UIImage(named:"j1.jpeg")//画像
             let img2:UIImage! = UIImage(named:"j2.jpeg")
-   
-            var audioPlayer:AVAudioPlayer = AVAudioPlayer()
-            var sound_data = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("uaboy", ofType: "wav")!)
-            audioPlayer = AVAudioPlayer(contentsOfURL: sound_data, error: nil);
-            audioPlayer.prepareToPlay();
-           
+//   
+//            var audioPlayer:AVAudioPlayer = AVAudioPlayer()
+//            var sound_data = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("uaboy", ofType: "wav")!)
+//            audioPlayer = AVAudioPlayer(contentsOfURL: sound_data, error: nil);
+//            audioPlayer.prepareToPlay();
+//           
             
             //テキストラベルに　xyz　の加速度の値を代入
             myXLabel.text = "x=\(accelerometerData.acceleration.x)"
@@ -113,23 +113,23 @@ class ViewController: UIViewController {
             myZLabel.text = "z=\(accelerometerData.acceleration.z)"
             
           
-//            もしx軸の正の方向に動かした時
+
             if (accelerometerData.acceleration.x > 0.1 )
             {
                 let iv:UIImageView = UIImageView(image:img)
-                iv.frame = CGRectMake(100,100, 300, 300)
+                iv.frame = CGRectMake(100,100, 200, 300)
                 self.view.addSubview(iv)
-                myWLabel.text = "w=\(a)"//テキストにa = "migi"を代入
-                AVAudioPlayerUtil.play();//再生
+                myWLabel.text = "w=\(a)"
+//                AVAudioPlayerUtil.play();//再生
                 
                            }
-//                x軸マイナスの値に動かした時
+
             else if (accelerometerData.acceleration.x < -0.1 )
             {
                 let iv:UIImageView = UIImageView(image:img2)
-                iv.frame = CGRectMake(50,50, 100, 100)
+                iv.frame = CGRectMake(100,100, 200, 300)
                 self.view.addSubview(iv)
-                myWLabel.text = "w=\(b)"//テキストにb = "hidari"を表示
+                myWLabel.text = "w=\(b)"
                 
                 
                             }
@@ -138,11 +138,11 @@ class ViewController: UIViewController {
         
        
        
-//        
-//        //停止について
-//        if (myMotionManager.accelerometerActive) {
-//            myMotionManager.stopAccelerometerUpdates()
-//        }
+        
+        //停止について
+        if (myMotionManager.accelerometerActive) {
+            myMotionManager.stopAccelerometerUpdates()
+        }
         
     }
 
