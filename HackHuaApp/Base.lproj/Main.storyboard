@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="27K-2x-qL4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HUA Product-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="HackHuaApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,12 +15,120 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cD7-tl-EcK">
+                                <rect key="frame" x="121" y="249" width="114" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="main ">
+                                    <color key="titleColor" red="0.050980396570000003" green="0.11372549830000001" blue="0.14509804549999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VYf-0Z-rE5" kind="show" id="CcF-rN-7BF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4e-kJ-KSM">
+                                <rect key="frame" x="187" y="372" width="144" height="142"/>
+                                <state key="normal" title="加速度測定">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dHn-H7-XIy" kind="show" id="If1-K9-a3H"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="HUA Product" id="BqN-W7-qU9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218" y="144"/>
+            <point key="canvasLocation" x="1030" y="144"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="rcd-MH-kff">
+            <objects>
+                <viewController id="VYf-0Z-rE5" customClass="MainViewController" customModule="HackHuaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eqf-1M-84h"/>
+                        <viewControllerLayoutGuide type="bottom" id="LQA-Gb-Gfn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dmf-rP-Vla">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6l5-Rf-z7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="157"/>
+        </scene>
+        <!--Sound View Controller-->
+        <scene sceneID="X4p-7f-AcN">
+            <objects>
+                <viewController id="m5o-Fv-Cxx" customClass="SoundViewController" customModule="HackHuaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a5Q-qE-wWr"/>
+                        <viewControllerLayoutGuide type="bottom" id="HxE-WG-oYn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8dT-OS-z03">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ns-i8-f7A">
+                                <rect key="frame" x="277" y="266" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Play:" destination="m5o-Fv-Cxx" eventType="touchUpInside" id="p2G-RP-uDi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Play" destination="2ns-i8-f7A" id="EUl-Ot-KU3"/>
+                        <outletCollection property="Playbtn" destination="2ns-i8-f7A" collectionClass="NSMutableArray" id="Wje-tR-F0L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDS-Hh-Tq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1754" y="-454"/>
+        </scene>
+        <!--Acceledata View Controller-->
+        <scene sceneID="n0j-Va-YJF">
+            <objects>
+                <viewController id="dHn-H7-XIy" customClass="acceledataViewController" customModule="HackHuaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NK7-X9-G3O"/>
+                        <viewControllerLayoutGuide type="bottom" id="zZN-wz-Ijf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hd1-UO-MUe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dul-HO-66F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680" y="151"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BBA-3g-kLf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="27K-2x-qL4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TvD-FT-X75">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="5zu-Tf-Z6y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKQ-3y-kiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="144"/>
         </scene>
     </scenes>
 </document>
