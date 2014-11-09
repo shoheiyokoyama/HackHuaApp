@@ -8,18 +8,31 @@
 
 import UIKit
 import AVFoundation
+
 class SoundViewController: UIViewController {
 
-    var manager: SoundAVAudioPlayer?
-    
-    
+
+    let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("uaboy", ofType: "wav")!)
+    var player = AVAudioPlayer()
   
+    @IBAction func playbtn(sender: UIButton) {
+        player.play()
+    }
+    @IBAction func pause(sender: UIButton) {
+        player.pause()
+    }
+    @IBAction func stop(sender: UIButton) {
+        player.stop()
+        player.currentTime = 0 //曲を頭に戻す
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-
-        // Do any additional setup after loading the view.
+        player = AVAudioPlayer(contentsOfURL: audioPath, error: nil)
+        player.prepareToPlay()//プレイヤーを再生する準備　再生した後スムーズに曲ができる
     }
 
     override func didReceiveMemoryWarning() {

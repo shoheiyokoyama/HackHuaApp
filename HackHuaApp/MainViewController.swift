@@ -9,9 +9,6 @@
 import UIKit
 import CoreMotion
 
-
-
-
 class MainViewController: UIViewController {
 
     var myMotionManager: CMMotionManager!
@@ -20,7 +17,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-       self.view.backgroundColor = UIColor.whiteColor()
+//       self.view.backgroundColor = UIColor.whiteColor()
         
         let myWLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
         myWLabel.backgroundColor = UIColor.blueColor()
@@ -48,22 +45,18 @@ class MainViewController: UIViewController {
             let b = "←"
             let c = "↑"
             let d = "↓"
-            
             let img1:UIImage! = UIImage(named:"j1.jpeg")
             let img2:UIImage! = UIImage(named:"j2.jpeg")
-            let img3:UIImage! = UIImage(named:"migi.jpeg")
-            let img4:UIImage! = UIImage(named:"hidari.jpeg")
-            let img5:UIImage! = UIImage(named:"ue.jpeg")
-            let img6:UIImage! = UIImage(named:"sita.jpeg")
-     
-
-            
+            let img3:UIImage! = UIImage(named:"migi1.jpg")
+            let img4:UIImage! = UIImage(named:"hidari.jpg")
+            let img5:UIImage! = UIImage(named:"ue.jpg")
+            let img6:UIImage! = UIImage(named:"sita.jpg")
             
             
             if (accelerometerData.acceleration.x > 0.1 )
             {
                 let iv:UIImageView = UIImageView(image:img3)
-                iv.frame = CGRectMake(100,100, 200, 300)
+                iv.frame = CGRectMake(100,100, 100, 100)
                 self.view.addSubview(iv)
                 myWLabel.text = "w=\(a)"
             }
@@ -71,7 +64,7 @@ class MainViewController: UIViewController {
             else if (accelerometerData.acceleration.x < -0.1 )
             {
                 let iv:UIImageView = UIImageView(image:img4)
-                iv.frame = CGRectMake(100,100, 200, 300)
+                iv.frame = CGRectMake(100,100, 100, 100)
                 self.view.addSubview(iv)
                 myWLabel.text = "w=\(b)"
                
@@ -81,7 +74,7 @@ class MainViewController: UIViewController {
             else if (accelerometerData.acceleration.y > 0.1 )
             {
                 let iv:UIImageView = UIImageView(image:img5)
-                iv.frame = CGRectMake(100,100, 200, 300)
+                iv.frame = CGRectMake(100,100, 100, 100)
                 self.view.addSubview(iv)
                 myWLabel.text = "w=\(c)"
                 
@@ -91,7 +84,7 @@ class MainViewController: UIViewController {
             else if (accelerometerData.acceleration.y < -0.1 )
             {
                 let iv:UIImageView = UIImageView(image:img6)
-                iv.frame = CGRectMake(100,100, 200, 300)
+                iv.frame = CGRectMake(100,100, 100, 100)
                 self.view.addSubview(iv)
                 myWLabel.text = "w=\(d)"
                 

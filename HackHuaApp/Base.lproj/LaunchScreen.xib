@@ -17,14 +17,14 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2014年 HUA. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Jwz-h3-ZGE">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="  Copyright (c) 2014年 HUA. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Jwz-h3-ZGE">
+                    <rect key="frame" x="20" y="439.5" width="441" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seikei.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nN3-wQ-4MW">
-                    <rect key="frame" x="120" y="250" width="240" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="seikei.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nN3-wQ-4MW">
+                    <rect key="frame" x="20" y="212" width="440" height="197.5"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -33,7 +33,11 @@
                 <constraint firstAttribute="centerX" secondItem="Jwz-h3-ZGE" secondAttribute="centerX" id="9ai-99-vME"/>
                 <constraint firstItem="gau-9R-unc" firstAttribute="centerY" secondItem="866-bJ-ydM" secondAttribute="bottom" multiplier="1/3" constant="1" id="NZY-gV-ZaW"/>
                 <constraint firstAttribute="bottom" secondItem="Jwz-h3-ZGE" secondAttribute="bottom" constant="20" id="PoI-b6-sma"/>
+                <constraint firstItem="nN3-wQ-4MW" firstAttribute="leading" secondItem="866-bJ-ydM" secondAttribute="leading" constant="20" id="Q46-Az-nlC"/>
+                <constraint firstItem="Jwz-h3-ZGE" firstAttribute="top" secondItem="nN3-wQ-4MW" secondAttribute="bottom" constant="30" id="S5W-RW-zlJ"/>
+                <constraint firstAttribute="trailing" secondItem="nN3-wQ-4MW" secondAttribute="trailing" constant="20" id="bck-Yx-0ei"/>
                 <constraint firstItem="gau-9R-unc" firstAttribute="leading" secondItem="866-bJ-ydM" secondAttribute="leading" constant="20" symbolic="YES" id="dHI-pq-BFp"/>
+                <constraint firstItem="nN3-wQ-4MW" firstAttribute="top" secondItem="gau-9R-unc" secondAttribute="bottom" constant="30" id="wGx-hZ-Jz9"/>
                 <constraint firstAttribute="centerX" secondItem="gau-9R-unc" secondAttribute="centerX" id="xVk-za-56q"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
