@@ -36,15 +36,6 @@
                                     <segue destination="VYf-0Z-rE5" kind="show" id="CcF-rN-7BF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noh-J1-h4l">
-                                <rect key="frame" x="243" y="177" width="60" height="30"/>
-                                <state key="normal" title="サウンド">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="m5o-Fv-Cxx" kind="show" id="b0c-OE-dT3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -77,53 +68,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6l5-Rf-z7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2393" y="157"/>
-        </scene>
-        <!--Sound View Controller-->
-        <scene sceneID="X4p-7f-AcN">
-            <objects>
-                <viewController id="m5o-Fv-Cxx" customClass="SoundViewController" customModule="HackHuaApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="a5Q-qE-wWr"/>
-                        <viewControllerLayoutGuide type="bottom" id="HxE-WG-oYn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8dT-OS-z03">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6d-2a-lT3">
-                                <rect key="frame" x="123" y="372" width="30" height="30"/>
-                                <state key="normal" title="play">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playbtn:" destination="m5o-Fv-Cxx" eventType="touchDown" id="EMe-Vu-zMf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1o-Ur-BiS">
-                                <rect key="frame" x="238" y="372" width="42" height="30"/>
-                                <state key="normal" title="pause">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pause:" destination="m5o-Fv-Cxx" eventType="touchDown" id="PIE-d2-lQv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z96-7V-Vqf">
-                                <rect key="frame" x="353" y="372" width="31" height="30"/>
-                                <state key="normal" title="stop">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="stop:" destination="m5o-Fv-Cxx" eventType="touchDown" id="NYF-R0-qVv"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EDS-Hh-Tq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1262" y="-280"/>
         </scene>
         <!--Acceledata View Controller-->
         <scene sceneID="n0j-Va-YJF">

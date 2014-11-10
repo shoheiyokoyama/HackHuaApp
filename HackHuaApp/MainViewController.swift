@@ -13,65 +13,59 @@ import AVFoundation
 class MainViewController: UIViewController {
 
     var myMotionManager: CMMotionManager!
-    var audio00 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("uaboy", ofType: "wav")!)
-    var playeruaboy = AVAudioPlayer()
+    var audio00 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ou", ofType: "wav")!)
+    var playerou = AVAudioPlayer()
     
-    var audio01 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("kyaa1", ofType: "wav")!)
-    var playerkyaa1 = AVAudioPlayer()
-    var audio02 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ohayo01", ofType: "mp3")!)
-    var playerohayo = AVAudioPlayer()
-    var audio03 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("uu", ofType: "wav")!)
-    var playeruu = AVAudioPlayer()
-    var audio04 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("kyaa02", ofType: "mp3")!)
-    var playerkyaa02 = AVAudioPlayer()
+    var audio01 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ugu", ofType: "wav")!)
+    var playerugu = AVAudioPlayer()
+    var audio02 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("guho", ofType: "mp3")!)
+    var playerguho = AVAudioPlayer()
+    var audio03 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ugya", ofType: "wav")!)
+    var playerugya = AVAudioPlayer()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let img1:UIImage! = UIImage(named:"j1.jpeg")
-        let img2:UIImage! = UIImage(named:"j2.jpeg")
-        let img3:UIImage! = UIImage(named:"migi1.jpg")
-        let img4:UIImage! = UIImage(named:"hidari.jpg")
-        let img5:UIImage! = UIImage(named:"ue.jpg")
-        let img6:UIImage! = UIImage(named:"sita.jpg")
+        
         let img7:UIImage! = UIImage(named:"gori1.jpg")
         let img8:UIImage! = UIImage(named:"gori2.jpg")
+        let img9:UIImage! = UIImage(named:"gori03.jpg")
 
-        playeruaboy = AVAudioPlayer(contentsOfURL: audio00, error: nil)
-        playeruaboy.prepareToPlay()
-        playerkyaa1 = AVAudioPlayer(contentsOfURL: audio01, error: nil)
-        playerkyaa1.prepareToPlay()
-        playerohayo = AVAudioPlayer(contentsOfURL: audio02, error: nil)
-        playerohayo.prepareToPlay()
-        playeruu = AVAudioPlayer(contentsOfURL: audio03, error: nil)
-        playeruu.prepareToPlay()
-        playerkyaa02 = AVAudioPlayer(contentsOfURL: audio04, error: nil)
-        playerkyaa02.prepareToPlay()
+        playerou = AVAudioPlayer(contentsOfURL: audio00, error: nil)
+        playerou.prepareToPlay()
+        playerugu = AVAudioPlayer(contentsOfURL: audio01, error: nil)
+        playerugu.prepareToPlay()
+        playerguho = AVAudioPlayer(contentsOfURL: audio02, error: nil)
+        playerguho.prepareToPlay()
+        playerugya = AVAudioPlayer(contentsOfURL: audio03, error: nil)
+        playerugya.prepareToPlay()
         
-        playerohayo.currentTime = 0
-        playerohayo.play()
+        
+        playerguho.currentTime = 0
+        playerguho.play()
 
         
-        let myWLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
-        myWLabel.backgroundColor = UIColor.blueColor()
-        myWLabel.layer.masksToBounds = true
-        myWLabel.layer.cornerRadius = 10.0
-        myWLabel.textColor = UIColor.whiteColor()
-        myWLabel.shadowColor = UIColor.grayColor()
-        myWLabel.textAlignment = NSTextAlignment.Center
-        myWLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 420)
-        
-        self.view.addSubview(myWLabel)
-        let iv:UIImageView = UIImageView(image:img8)
-        iv.frame = CGRectMake(30,30, 300, 300)
-        self.view.addSubview(iv)
+//        let myWLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
+//        myWLabel.backgroundColor = UIColor.blueColor()
+//        myWLabel.layer.masksToBounds = true
+//        myWLabel.layer.cornerRadius = 10.0
+//        myWLabel.textColor = UIColor.whiteColor()
+//        myWLabel.shadowColor = UIColor.grayColor()
+//        myWLabel.textAlignment = NSTextAlignment.Center
+//        myWLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 420)
+//        
+//        self.view.addSubview(myWLabel)
+//        let iv:UIImageView = UIImageView(image:img8)
+//        iv.frame = CGRectMake(30,30, 300, 300)
+//        self.view.addSubview(iv)
         
         
         // MotionManagerを生成.
         myMotionManager = CMMotionManager()
         
         // 更新周期を設定.
-        myMotionManager.accelerometerUpdateInterval = 0.2
+        myMotionManager.accelerometerUpdateInterval = 0.1
         
         
         // 加速度の取得を開始.
@@ -86,41 +80,52 @@ class MainViewController: UIViewController {
             
             
             
-            if (accelerometerData.acceleration.x > 1)
+            if  accelerometerData.acceleration.x > 0.7
             {
-                self.playeruu.currentTime = 0
-                self.playeruu.play()
+                self.playerou.currentTime = 0
+                self.playerou.play()
 
                 let iv:UIImageView = UIImageView(image:img7)
-                iv.frame = CGRectMake(30,30, 300, 300)
+                iv.frame = CGRectMake(0,0, 300, 500)
                 self.view.addSubview(iv)
-                myWLabel.text = "w=\(a)"
+//                myWLabel.text = "w=\(a)"
+            }
+            else if accelerometerData.acceleration.y > 0.7
+            {
+                self.playerugu.currentTime = 0
+                self.playerugu.play()
+                
+                let iv:UIImageView = UIImageView(image:img9)
+                iv.frame = CGRectMake(0,0, 300, 500)
+                self.view.addSubview(iv)
+                
             }
                 
-            else if (w < 1)
+            else if accelerometerData.acceleration.y < -0.7
             {
-                
-                let iv:UIImageView = UIImageView(image:img8)
-                iv.frame = CGRectMake(30,30, 300, 300)
+                self.playerugya.currentTime = 0
+                self.playerugya.play()
+                let iv:UIImageView = UIImageView(image:img7)
+                iv.frame = CGRectMake(0,0, 300, 500)
                 self.view.addSubview(iv)
-                myWLabel.text = "w=\(b)"
+                
                
                 
                 
             }
-            
+            else
+            {
+                
+                let iv:UIImageView = UIImageView(image:img8)
+                iv.frame = CGRectMake(0,0, 300, 500)
+                self.view.addSubview(iv)
                 
                 
                 
                 
-            
-            
-            
-           
+            }
+
         })
-        
-        
-        
         
         
         //停止について
