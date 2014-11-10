@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6D0091CF1A0E39F2004C3A4B /* migi1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D0091CE1A0E39F2004C3A4B /* migi1.jpg */; };
+		6D5573B91A0F9CC50085548F /* kyaa1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D5573B81A0F9CC50085548F /* kyaa1.wav */; };
 		6D5B09961A0DFD41000F07D9 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B09951A0DFD41000F07D9 /* SoundViewController.swift */; };
 		6D5B09981A0E0152000F07D9 /* SoundAVAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B09971A0E0152000F07D9 /* SoundAVAudioPlayer.swift */; };
+		6D5DFB0A1A107FD30036C812 /* gori2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D5DFB091A107FD30036C812 /* gori2.jpg */; };
+		6D5DFB0C1A107FD90036C812 /* gori1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D5DFB0B1A107FD90036C812 /* gori1.jpg */; };
+		6D5DFB0E1A107FED0036C812 /* ohayo01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D5DFB0D1A107FED0036C812 /* ohayo01.mp3 */; };
+		6D5DFB101A107FFE0036C812 /* kyaa02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D5DFB0F1A107FFE0036C812 /* kyaa02.mp3 */; };
+		6D5DFB121A10800A0036C812 /* uu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D5DFB111A10800A0036C812 /* uu.wav */; };
 		6D7FCDDB1A070CE700A85E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7FCDDA1A070CE700A85E03 /* AppDelegate.swift */; };
 		6D7FCDDD1A070CE700A85E03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7FCDDC1A070CE700A85E03 /* ViewController.swift */; };
 		6D7FCDE01A070CE700A85E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7FCDDE1A070CE700A85E03 /* Main.storyboard */; };
@@ -40,8 +46,14 @@
 
 /* Begin PBXFileReference section */
 		6D0091CE1A0E39F2004C3A4B /* migi1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = migi1.jpg; sourceTree = "<group>"; };
+		6D5573B81A0F9CC50085548F /* kyaa1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kyaa1.wav; sourceTree = "<group>"; };
 		6D5B09951A0DFD41000F07D9 /* SoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		6D5B09971A0E0152000F07D9 /* SoundAVAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundAVAudioPlayer.swift; sourceTree = "<group>"; };
+		6D5DFB091A107FD30036C812 /* gori2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gori2.jpg; sourceTree = "<group>"; };
+		6D5DFB0B1A107FD90036C812 /* gori1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gori1.jpg; sourceTree = "<group>"; };
+		6D5DFB0D1A107FED0036C812 /* ohayo01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohayo01.mp3; sourceTree = "<group>"; };
+		6D5DFB0F1A107FFE0036C812 /* kyaa02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kyaa02.mp3; sourceTree = "<group>"; };
+		6D5DFB111A10800A0036C812 /* uu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = uu.wav; sourceTree = "<group>"; };
 		6D7FCDD51A070CE700A85E03 /* HackHuaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackHuaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7FCDD91A070CE700A85E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7FCDDA1A070CE700A85E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,8 +102,14 @@
 				6D7FCDD61A070CE700A85E03 /* Products */,
 				6DFF5A641A0CC4F20097EF4C /* j1.jpeg */,
 				6DFF5A661A0CC6240097EF4C /* j2.jpeg */,
+				6D5DFB111A10800A0036C812 /* uu.wav */,
 				6DFF5A681A0CCCAE0097EF4C /* uaboy.wav */,
+				6D5DFB0F1A107FFE0036C812 /* kyaa02.mp3 */,
+				6D5DFB0D1A107FED0036C812 /* ohayo01.mp3 */,
+				6D5DFB0B1A107FD90036C812 /* gori1.jpg */,
+				6D5DFB091A107FD30036C812 /* gori2.jpg */,
 				6D0091CE1A0E39F2004C3A4B /* migi1.jpg */,
+				6D5573B81A0F9CC50085548F /* kyaa1.wav */,
 				6DAD424B1A0DA225006DA98F /* hidari.jpg */,
 				6DAD424D1A0DA22A006DA98F /* ue.jpg */,
 				6DAD424F1A0DA22F006DA98F /* sita.jpg */,
@@ -234,15 +252,21 @@
 				6D7FCDE01A070CE700A85E03 /* Main.storyboard in Resources */,
 				6D7FCDE51A070CE700A85E03 /* LaunchScreen.xib in Resources */,
 				6DAD424C1A0DA225006DA98F /* hidari.jpg in Resources */,
+				6D5573B91A0F9CC50085548F /* kyaa1.wav in Resources */,
 				6DAD42551A0DBA51006DA98F /* seikei.jpg in Resources */,
 				6DFF5A651A0CC4F20097EF4C /* j1.jpeg in Resources */,
 				6DFF5A691A0CCCAE0097EF4C /* uaboy.wav in Resources */,
+				6D5DFB101A107FFE0036C812 /* kyaa02.mp3 in Resources */,
+				6D5DFB121A10800A0036C812 /* uu.wav in Resources */,
 				6D7FCDE21A070CE700A85E03 /* Images.xcassets in Resources */,
 				6DAD42501A0DA22F006DA98F /* sita.jpg in Resources */,
+				6D5DFB0C1A107FD90036C812 /* gori1.jpg in Resources */,
+				6D5DFB0E1A107FED0036C812 /* ohayo01.mp3 in Resources */,
 				6DFF5A671A0CC6240097EF4C /* j2.jpeg in Resources */,
 				6DAD424E1A0DA22A006DA98F /* ue.jpg in Resources */,
 				6DAD42531A0DACD1006DA98F /* ミッキー.jpg in Resources */,
 				6D0091CF1A0E39F2004C3A4B /* migi1.jpg in Resources */,
+				6D5DFB0A1A107FD30036C812 /* gori2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
