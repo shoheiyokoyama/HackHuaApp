@@ -20,6 +20,13 @@
 		6D7FCDE21A070CE700A85E03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7FCDE11A070CE700A85E03 /* Images.xcassets */; };
 		6D7FCDE51A070CE700A85E03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D7FCDE31A070CE700A85E03 /* LaunchScreen.xib */; };
 		6D7FCDF11A070CE700A85E03 /* HackHuaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7FCDF01A070CE700A85E03 /* HackHuaAppTests.swift */; };
+		6D969C901A136BF5002EEB5E /* いたい.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D969C8F1A136BF5002EEB5E /* いたい.wav */; };
+		6D969C921A136BFD002EEB5E /* いてっ.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D969C911A136BFD002EEB5E /* いてっ.wav */; };
+		6D969C941A136C06002EEB5E /* いたいってば.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D969C931A136C06002EEB5E /* いたいってば.wav */; };
+		6D969C961A136DD9002EEB5E /* naki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D969C951A136DD9002EEB5E /* naki.jpg */; };
+		6D969C981A136DDF002EEB5E /* odorokijpg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D969C971A136DDF002EEB5E /* odorokijpg.jpg */; };
+		6D969C9A1A136DE6002EEB5E /* warai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D969C991A136DE6002EEB5E /* warai.jpg */; };
+		6D969C9C1A137096002EEB5E /* ooi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D969C9B1A137096002EEB5E /* ooi.wav */; };
 		6DAD42551A0DBA51006DA98F /* seikei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6DAD42541A0DBA51006DA98F /* seikei.jpg */; };
 		6DAD42851A0DC67F006DA98F /* acceledataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAD42841A0DC67F006DA98F /* acceledataViewController.swift */; };
 		6DAD42871A0DC9CC006DA98F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAD42861A0DC9CC006DA98F /* MainViewController.swift */; };
@@ -53,6 +60,13 @@
 		6D7FCDEA1A070CE700A85E03 /* HackHuaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackHuaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7FCDEF1A070CE700A85E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7FCDF01A070CE700A85E03 /* HackHuaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackHuaAppTests.swift; sourceTree = "<group>"; };
+		6D969C8F1A136BF5002EEB5E /* いたい.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "いたい.wav"; sourceTree = "<group>"; };
+		6D969C911A136BFD002EEB5E /* いてっ.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "いてっ.wav"; sourceTree = "<group>"; };
+		6D969C931A136C06002EEB5E /* いたいってば.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "いたいってば.wav"; sourceTree = "<group>"; };
+		6D969C951A136DD9002EEB5E /* naki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = naki.jpg; sourceTree = "<group>"; };
+		6D969C971A136DDF002EEB5E /* odorokijpg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = odorokijpg.jpg; sourceTree = "<group>"; };
+		6D969C991A136DE6002EEB5E /* warai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warai.jpg; sourceTree = "<group>"; };
+		6D969C9B1A137096002EEB5E /* ooi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ooi.wav; sourceTree = "<group>"; };
 		6DAD42541A0DBA51006DA98F /* seikei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seikei.jpg; sourceTree = "<group>"; };
 		6DAD42841A0DC67F006DA98F /* acceledataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = acceledataViewController.swift; sourceTree = "<group>"; };
 		6DAD42861A0DC9CC006DA98F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +104,13 @@
 				6D6FC7E91A110AD700A4FD75 /* ugu.wav */,
 				6D6FC7F11A110CC600A4FD75 /* ugya.wav */,
 				6DAD42541A0DBA51006DA98F /* seikei.jpg */,
+				6D969C8F1A136BF5002EEB5E /* いたい.wav */,
+				6D969C911A136BFD002EEB5E /* いてっ.wav */,
+				6D969C931A136C06002EEB5E /* いたいってば.wav */,
+				6D969C951A136DD9002EEB5E /* naki.jpg */,
+				6D969C9B1A137096002EEB5E /* ooi.wav */,
+				6D969C971A136DDF002EEB5E /* odorokijpg.jpg */,
+				6D969C991A136DE6002EEB5E /* warai.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,13 +244,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D7FCDE01A070CE700A85E03 /* Main.storyboard in Resources */,
+				6D969C961A136DD9002EEB5E /* naki.jpg in Resources */,
 				6D7FCDE51A070CE700A85E03 /* LaunchScreen.xib in Resources */,
 				6D6FC7F01A110B0500A4FD75 /* gori03.jpg in Resources */,
 				6D6FC7EA1A110AD700A4FD75 /* ugu.wav in Resources */,
+				6D969C981A136DDF002EEB5E /* odorokijpg.jpg in Resources */,
 				6D6FC7EC1A110ADE00A4FD75 /* ou.wav in Resources */,
 				6DAD42551A0DBA51006DA98F /* seikei.jpg in Resources */,
+				6D969C901A136BF5002EEB5E /* いたい.wav in Resources */,
 				6D6FC7F21A110CC600A4FD75 /* ugya.wav in Resources */,
 				6D7FCDE21A070CE700A85E03 /* Images.xcassets in Resources */,
+				6D969C9A1A136DE6002EEB5E /* warai.jpg in Resources */,
+				6D969C9C1A137096002EEB5E /* ooi.wav in Resources */,
+				6D969C941A136C06002EEB5E /* いたいってば.wav in Resources */,
+				6D969C921A136BFD002EEB5E /* いてっ.wav in Resources */,
 				6D6FC7EE1A110AEA00A4FD75 /* guho.mp3 in Resources */,
 				6D5DFB0C1A107FD90036C812 /* gori1.jpg in Resources */,
 				6D5DFB0A1A107FD30036C812 /* gori2.jpg in Resources */,

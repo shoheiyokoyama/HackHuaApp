@@ -22,6 +22,14 @@ class MainViewController: UIViewController {
     var playerguho = AVAudioPlayer()
     var audio03 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ugya", ofType: "wav")!)
     var playerugya = AVAudioPlayer()
+    var audio04 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("いたい", ofType: "wav")!)
+    var playeritai01 = AVAudioPlayer()
+    var audio05 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("いてっ", ofType: "wav")!)
+    var playeritai02 = AVAudioPlayer()
+    var audio06 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("いたいってば", ofType: "wav")!)
+    var playeritai03 = AVAudioPlayer()
+    var audio07 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ooi", ofType: "wav")!)
+    var playerooi = AVAudioPlayer()
     
     
     override func viewDidLoad() {
@@ -31,6 +39,10 @@ class MainViewController: UIViewController {
         let img7:UIImage! = UIImage(named:"gori1.jpg")
         let img8:UIImage! = UIImage(named:"gori2.jpg")
         let img9:UIImage! = UIImage(named:"gori03.jpg")
+        let img10:UIImage! = UIImage(named:"warai.jpg")
+        let img11:UIImage! = UIImage(named:"naki.jpg")
+        let img12:UIImage! = UIImage(named:"odoroki.jpg")
+
 
         playerou = AVAudioPlayer(contentsOfURL: audio00, error: nil)
         playerou.prepareToPlay()
@@ -40,10 +52,18 @@ class MainViewController: UIViewController {
         playerguho.prepareToPlay()
         playerugya = AVAudioPlayer(contentsOfURL: audio03, error: nil)
         playerugya.prepareToPlay()
+        playeritai01 = AVAudioPlayer(contentsOfURL: audio04, error: nil)
+        playeritai01.prepareToPlay()
+        playeritai02 = AVAudioPlayer(contentsOfURL: audio05, error: nil)
+        playeritai02.prepareToPlay()
+        playeritai03 = AVAudioPlayer(contentsOfURL: audio06, error: nil)
+        playeritai03.prepareToPlay()
+        playerooi = AVAudioPlayer(contentsOfURL: audio07, error: nil)
+        playerooi.prepareToPlay()
         
         
-        playerguho.currentTime = 0
-        playerguho.play()
+        playerooi.currentTime = 0
+        playerooi.play()
 
         
 //        let myWLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
@@ -80,32 +100,32 @@ class MainViewController: UIViewController {
             
             
             
-            if  accelerometerData.acceleration.x > 0.7
+            if  accelerometerData.acceleration.x > 0.3
             {
-                self.playerou.currentTime = 0
-                self.playerou.play()
+                self.playeritai01.currentTime = 0
+                self.playeritai01.play()
 
-                let iv:UIImageView = UIImageView(image:img7)
+                let iv:UIImageView = UIImageView(image:img11)
                 iv.frame = CGRectMake(0,0, 300, 500)
                 self.view.addSubview(iv)
 //                myWLabel.text = "w=\(a)"
             }
-            else if accelerometerData.acceleration.y > 0.7
+            else if accelerometerData.acceleration.y > 0.3
             {
-                self.playerugu.currentTime = 0
-                self.playerugu.play()
+                self.playeritai02.currentTime = 0
+                self.playeritai02.play()
                 
-                let iv:UIImageView = UIImageView(image:img9)
+                let iv:UIImageView = UIImageView(image:img11)
                 iv.frame = CGRectMake(0,0, 300, 500)
                 self.view.addSubview(iv)
                 
             }
                 
-            else if accelerometerData.acceleration.y < -0.7
+            else if accelerometerData.acceleration.y < -0.4
             {
-                self.playerugya.currentTime = 0
-                self.playerugya.play()
-                let iv:UIImageView = UIImageView(image:img7)
+                self.playeritai03.currentTime = 0
+                self.playeritai03.play()
+                let iv:UIImageView = UIImageView(image:img12)
                 iv.frame = CGRectMake(0,0, 300, 500)
                 self.view.addSubview(iv)
                 
@@ -116,7 +136,7 @@ class MainViewController: UIViewController {
             else
             {
                 
-                let iv:UIImageView = UIImageView(image:img8)
+                let iv:UIImageView = UIImageView(image:img10)
                 iv.frame = CGRectMake(0,0, 300, 500)
                 self.view.addSubview(iv)
                 
