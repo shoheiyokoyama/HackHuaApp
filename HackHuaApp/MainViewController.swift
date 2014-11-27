@@ -13,15 +13,8 @@ import AVFoundation
 class MainViewController: UIViewController {
 
     var myMotionManager: CMMotionManager!
-    var audio00 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ou", ofType: "wav")!)
-    var playerou = AVAudioPlayer()
     
-    var audio01 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ugu", ofType: "wav")!)
-    var playerugu = AVAudioPlayer()
-    var audio02 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("guho", ofType: "mp3")!)
-    var playerguho = AVAudioPlayer()
-    var audio03 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ugya", ofType: "wav")!)
-    var playerugya = AVAudioPlayer()
+
     var audio04 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("いたい", ofType: "wav")!)
     var playeritai01 = AVAudioPlayer()
     var audio05 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("いてっ", ofType: "wav")!)
@@ -30,28 +23,24 @@ class MainViewController: UIViewController {
     var playeritai03 = AVAudioPlayer()
     var audio07 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ooi", ofType: "wav")!)
     var playerooi = AVAudioPlayer()
-    
+    var audio08 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("konnitiha01", ofType: "wav")!)
+    var playerkon = AVAudioPlayer()
+    var audio09 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("uhaW01", ofType: "mp3")!)
+    var playeruha01 = AVAudioPlayer()
+    var audio10 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("itaW03", ofType: "mp3")!)
+    var playeruha03 = AVAudioPlayer()
+    var audio11 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("itaW02", ofType: "mp3")!)
+    var player11 = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.whiteColor()
         
+        let imgW01:UIImage! = UIImage(named:"Woman01.png")
+        let imgW02:UIImage! = UIImage(named:"Woman02.png")
         
-        let img7:UIImage! = UIImage(named:"gori1.jpg")
-        let img8:UIImage! = UIImage(named:"gori2.jpg")
-        let img9:UIImage! = UIImage(named:"gori03.jpg")
-        let img10:UIImage! = UIImage(named:"warai.jpg")
-        let img11:UIImage! = UIImage(named:"naki.jpg")
-        let img12:UIImage! = UIImage(named:"odoroki.jpg")
 
 
-        playerou = AVAudioPlayer(contentsOfURL: audio00, error: nil)
-        playerou.prepareToPlay()
-        playerugu = AVAudioPlayer(contentsOfURL: audio01, error: nil)
-        playerugu.prepareToPlay()
-        playerguho = AVAudioPlayer(contentsOfURL: audio02, error: nil)
-        playerguho.prepareToPlay()
-        playerugya = AVAudioPlayer(contentsOfURL: audio03, error: nil)
-        playerugya.prepareToPlay()
         playeritai01 = AVAudioPlayer(contentsOfURL: audio04, error: nil)
         playeritai01.prepareToPlay()
         playeritai02 = AVAudioPlayer(contentsOfURL: audio05, error: nil)
@@ -60,25 +49,19 @@ class MainViewController: UIViewController {
         playeritai03.prepareToPlay()
         playerooi = AVAudioPlayer(contentsOfURL: audio07, error: nil)
         playerooi.prepareToPlay()
+        playerkon = AVAudioPlayer(contentsOfURL: audio08, error: nil)
+        playerkon.prepareToPlay()
+        playeruha01 = AVAudioPlayer(contentsOfURL: audio09, error: nil)
+        playeruha01.prepareToPlay()
+        playeruha03 = AVAudioPlayer(contentsOfURL: audio10, error: nil)
+        playeruha03.prepareToPlay()
+        player11 = AVAudioPlayer(contentsOfURL: audio11, error: nil)
+        player11.prepareToPlay()
         
-        
-        playerooi.currentTime = 0
-        playerooi.play()
+        playerkon.currentTime = 0
+        playerkon.play()
 
-        
-//        let myWLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
-//        myWLabel.backgroundColor = UIColor.blueColor()
-//        myWLabel.layer.masksToBounds = true
-//        myWLabel.layer.cornerRadius = 10.0
-//        myWLabel.textColor = UIColor.whiteColor()
-//        myWLabel.shadowColor = UIColor.grayColor()
-//        myWLabel.textAlignment = NSTextAlignment.Center
-//        myWLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 420)
-//        
-//        self.view.addSubview(myWLabel)
-//        let iv:UIImageView = UIImageView(image:img8)
-//        iv.frame = CGRectMake(30,30, 300, 300)
-//        self.view.addSubview(iv)
+     
         
         
         // MotionManagerを生成.
@@ -93,51 +76,60 @@ class MainViewController: UIViewController {
             
             
             let w  = accelerometerData.acceleration.x + accelerometerData.acceleration.y + accelerometerData.acceleration.z//xyz軸の加速度の合計
-            let a = "→"
-            let b = "←"
-            let c = "↑"
-            let d = "↓"
-            
-            
-            
-            if  accelerometerData.acceleration.x > 0.3
-            {
-                self.playeritai01.currentTime = 0
-                self.playeritai01.play()
 
-                let iv:UIImageView = UIImageView(image:img11)
-                iv.frame = CGRectMake(0,0, 300, 500)
+          
+            
+            
+            if  accelerometerData.acceleration.x > 0.1
+            {
+                self.playeruha01.currentTime = 0
+                self.playeruha01.play()
+
+                let iv:UIImageView = UIImageView(image:imgW02)
+                iv.frame = CGRectMake(35,100, 250, 350)
                 self.view.addSubview(iv)
-//                myWLabel.text = "w=\(a)"
+
             }
-            else if accelerometerData.acceleration.y > 0.3
+            else if accelerometerData.acceleration.y > 0.1
             {
                 self.playeritai02.currentTime = 0
                 self.playeritai02.play()
                 
-                let iv:UIImageView = UIImageView(image:img11)
-                iv.frame = CGRectMake(0,0, 300, 500)
+                let iv:UIImageView = UIImageView(image:imgW02)
+                iv.frame = CGRectMake(35,100, 250, 350)
                 self.view.addSubview(iv)
                 
             }
                 
-            else if accelerometerData.acceleration.y < -0.4
+            else if accelerometerData.acceleration.y < -0.1
             {
-                self.playeritai03.currentTime = 0
-                self.playeritai03.play()
-                let iv:UIImageView = UIImageView(image:img12)
-                iv.frame = CGRectMake(0,0, 300, 500)
+                self.playeruha03.currentTime = 0
+                self.playeruha03.play()
+                let iv:UIImageView = UIImageView(image:imgW02)
+                iv.frame = CGRectMake(35,100, 250, 350)
                 self.view.addSubview(iv)
                 
                
                 
                 
             }
+            else if  accelerometerData.acceleration.x < -0.1
+            {
+                self.playeruha03.currentTime = 0
+                self.playeruha03.play()
+                
+                let iv:UIImageView = UIImageView(image:imgW02)
+                iv.frame = CGRectMake(35,100, 250, 350)
+                self.view.addSubview(iv)
+                
+            }
+
+        
             else
             {
                 
-                let iv:UIImageView = UIImageView(image:img10)
-                iv.frame = CGRectMake(0,0, 300, 500)
+                let iv:UIImageView = UIImageView(image:imgW01)
+                iv.frame = CGRectMake(35,100, 250, 350)
                 self.view.addSubview(iv)
                 
                 
@@ -148,15 +140,17 @@ class MainViewController: UIViewController {
         })
         
         
+     
+        
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
         //停止について
         if (myMotionManager.accelerometerActive) {
             myMotionManager.stopAccelerometerUpdates()
         }
-
-        
-        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
